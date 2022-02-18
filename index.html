@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mafia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="background">
+	<h1 class="bold big-t">Для ведущего мафии</h1>
+	<div>
+		<span>Введите количество игроков: <input type="text" class="player inp" value="10"></span>
+	</div>
+	<hr>
+		<span>Выберите какие роли будет в игре 
+			<br>
+			<input type="checkbox" class="maf checks" checked> Мафия
+			<input type="text" placeholder="Кол-во мафий" class="mafs inp" value="2">
+			<br>
+			<input type="checkbox" class="kom checks"> Комиссар 
+			<br>
+			<input type="checkbox" class="don checks" > Дон
+			<br>
+			<input type="checkbox" class="dok checks"> Доктор
+		</span>
+		<br>
+		<button class="button">Отправить</button>
+	<hr>
+	<span class="bold">Роли	</span>
+		<div class="roles-m"></div>
+		<div class="roles-k"></div>
+		<div class="roles-don"></div>
+		<div class="roles-d"></div>
+		<div class="roles-ma"></div>
+		<div class="roles-pu"></div>
+		<hr>
+	<span class="bold">Таймер</span>
+	<div>
+		<div>
+			Отсчёт 1 минуты
+			<div><button class="timebut">Начать отсчёт</button><button class="timestop">Остановить таймер</button></div>
+			<span class="timer"></span>
+
+		</div>
+		<div>
+		<div>Отсчёт N секунд</div>
+		<input type="number" class="kolvosek" name="" placeholder="n"><button class="timebut2">Начать отсчёт
+		</button><button class="timestop2">Остановить таймер</button>
+		</div>
+					<span class="timer2"></span>
+	</div>
+	<div>
+		<hr>
+			<span class="bold">Заметки</span>
+			<br>	
+			<div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+			<div><input type="number" class="dienum" placeholder="Кто умер:"><button class="diebut">Отправить</button><button class="dieclear">Очистить</button></div>
+			<div>Умерли: <span class="die"></span></div>
+	</div>
+
+	</div>
+
+	<hr>
+	<div>
+		Приятного провождения игр! =)
+	</div>
+    <script src="js.js"></script>
+</body>
+</html>
